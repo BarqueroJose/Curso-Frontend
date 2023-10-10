@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilosjuegos.css">
+    <title>Juego</title>
+</head>
+<body>
+    <main>
+        <div id="contenedorJuego">
+            <div id="juego">
+            <!--Pinta el panel de juego automaticamente-->
+            
+            <!--<div class="containerItem"><div class="item"></div></div>-->
+               
+            </div>
+            <div id="juegoAcabado">
+                <button id="nuevaPartida">Nueva Partida</button>
+            </div>
+            <div id="tituloJuego">
+                <p>MASTERDOTS</p>
+            </div>
+        </div>
+            <div id="contenedorUsuario">
+                <form id="form_entrada" action="juego.html">
+                    <div class="itemform">
+                        <img src="Imagenes/avatar1.png" width="26" id="avatarImg">
+                        <input type="text" id="nick" value="nick" readonly>
+                    </div>
+                    <div class="itemform">
+                        <label for="puntuacion">puntuacion</label>
+                        <input type="text" id="puntuacion" value="0"  class="inputJuego" readonly>
+                    </div>
+                    <div class="itemform">
+                        <label for="tmpo">tiempo restante</label>
+                        <input type="text" id="tmpo" value="15" class="inputJuego" readonly>
+                    </div>
+                </form>
+            </div>
+    </main>
+    <footer>
+        Practica FrontEnd, Html,Css y Js
+    </footer>
+
+    <!--Codigo js-->
+    <script src="JS/datosUsuario.js""></script>
+    <script src="JS/juegos.js"> </script>
+   
+
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    background-color: #f5f5f5;
+    /*Agregando la fuente */
+    font-family: 'Poppins', sans-serif;
+
+}
+/*Centrando el logo y el pie de pagina */
+header, footer{
+    text-align: center;
+    width: 300px;
+    /*Agregando margen y centrando con los autos */
+    margin: 30px auto 0px auto;
+}
+
+/* witdh establece el ancho de un elemento. 
+
+margin establece el margen para los cuatro lados. secuencia : arriba, derecha, abajo, izquierda
+
+padding establece el area de relleno en los 4 lados de un elemento
+
+border establece el borde de un elemento. */
+ header, img{
+    /*Agregandole esquinas redondeadas a el logo */
+    border-radius: 5px;
+}
+main{
+    width: 300px;
+    margin: 30px auto 0px auto;
+}
+form{
+ /*Para ocupar de mejor forma el flex se ocupa de preferencia desde el padre (El que envuelve todo el formulario en este caso form) */
+ display: flex;
+ /*Aqui le agregamos la direccion que queremos al flex (filas o columnas) */
+ flex-direction: column;
+ /*Establece el tamano de la distancia entre las filas de un elemento */
+row-gap: 20px;
+/*Haciendo la fuente las grande */
+font-size: 18px;
+}
+
+label{
+    /*Al agregarle el block el label va a ocupar todo el contenido del container (padre)*/
+display: block;
+/*agrega distancia hacia abajo*/
+margin-bottom: 10px;
+
+}
+input{
+    /*Se establece que el orden de la pagina ira en linea recta */
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    /*Ancho del textbox*/
+    width: 236px;
+    /*Se le agrega un pequeno borde en blanco */
+    border: 1px solid #ced4da;
+    /*establece el area de relleno en los 4 lados de un elemento */
+    padding: 10px ;
+    /*agregando borde */
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 200;
+    /*tamano de la fuente */
+    font-size: 18px;
+}
+input[type = "submit"]{
+    background-color: #fd0c49;
+    color: #fff;
+    /*Le agrega negrita a la fuente (en este caso le agrega mas contorno a las letras blancas */
+    font-weight: 400; ;
+    /*Le agregamos el borde al boton jugar */
+    border-radius: 5px 5px 5px 5px ;
+    /*Ancho del boton*/
+    width: 100%;
+}
+input[type="email"]{
+    border: 1px solid #ced4da;
+    font-weight: 200;
+    font-size:18px;
+    border-radius: 5px;
+    width: 278px;
+}
+
+select{
+    font-family: 'Poppins', sans-serif;
+     /*Le agrega negrita a la fuente (en este caso le agrega mas contorno a las letras blancas */
+     font-weight: 20px; ;
+      /*tamano de la fuente */
+     font-size: 18px;
+     /*Le agregamos el borde combobox*/
+     border-radius: 5px 5px 5px 5px ;
+     /*Ancho del combobox*/
+     width: 100%;
+     /*Se le agrega un pequeno borde en blanco */
+     border: 1px solid #ced4da;
+    
+}
+footer{
+    font-weight: 100px;
+}
+
+/*Clases */
+.avatarIteam{
+    background-color: #fff;
+    border: solid 1px #fd0c49;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+/* IDS */
+#nicka{
+float: left;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+width: 20px;
+background-color: #ced4da;
+border-radius: 1px solid #ced4da;
+padding: 10px;
+border-radius: 5px 0px 0px 5px;
+font-weight: 400;
+font-size: 18px;
+}
+
+#error{
+    text-align: center;
+    color: #fd0c49;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+/* Avatares */
+#avatar{
+    float: left;
+}
+#avatarContainer{
+    display: flex;
+    background-color: #fff;
+    border: solid 1px #fd0c49;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#avatarGrid{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 5px;
+margin-top: 30px;
+}

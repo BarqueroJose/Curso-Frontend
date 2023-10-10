@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica FrontEnd</title>
+        <!-- Libreria de fuentes (tipos de letras)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/reset.css">
+    <link rel="stylesheet" href="Css/estilos.css">
+    
+</head>
+<body>
+    <!--Inicio de la pagina-->
+    <!--Header representa contenido introductorio. Puede contener algunos elementos del encabezado-->
+    <header>
+    <img src="Imagenes/IMG_6769.PNG" alt="LogoGod">
+    </header>
+    <!--FORMULARIO DE USUARIO-->
+    <!--main representa el contenido dominante de un documento-->
+    <main>
+        <div>
+            <!--Mensaje Error-->
+            <p id="error"></p>
+        </div>
+    <!--presenta una sección de un documento que contiene controles interactivos que permiten a un 
+        usuario enviar información a un servidor web.-->
+     <form action="juego.html" id="formEntrada">
+     <div class="iteamForm">
+        <label for="nick">Introduce tu nick*</label>
+        <!--Con esto creamos un textbox-->
+        <input type="text" name="nick" value="@" id="nicka" readonly>
+        <input type="text" name="nick" id="nick" required minlength="3">
+        </div>
+
+        <div class="iteamForm" >
+        <label for="email">Correo Electronico</label>
+        <!--Con esto creamos un textbox-->
+        <input type="email" id="email">
+        </div>
+
+        
+        <div class="itemform">
+            <label for="tamano">tamano del juego*</label>
+            <!-- representa un control que proporciona un menú de opciones comboBox-->
+            <select name="tamano" id="tamano" required>
+                <!--Con esto agregamos las opciones al comboBox-->
+            <option value="0">--Elige un tamaño--</option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+            <option value="6">6x6</option>
+        </select>
+    </div>
+        <div class="itemform">
+            <div id="avatar">
+                <label for="avatar">Avatar</label>
+                <div id="avatarContainer">
+                    <img src="Imagenes/avatar1.png" alt="" id="avatarImg">
+                </div>
+            </div>
+                <div id="avatarGrid">
+                    <div class="avatarIteam">
+                        <img src="Imagenes/avatar1.png" class="avatarImgItem" alt=""  width="35" draggable="true">
+                    </div>
+                    <div class="avatarIteam">
+                        <img src="Imagenes/avatar2.png" class="avatarImgItem" alt=""  width="35" draggable="true">
+                    </div>
+                    <div class="avatarIteam">
+                        <img src="Imagenes/avatar3.png" class="avatarImgItem" alt=""  width="35" draggable="true">
+                    </div>
+                    <div class="avatarIteam">
+                        <img src="Imagenes/avatar4.png" class="avatarImgItem" alt=""  width="35" draggable="true">
+                    </div>
+                    <div class="avatarIteam">
+                        <img src="Imagenes/avatar5.png" class="avatarImgItem" alt=""  width="35" draggable="true">
+                    </div>
+                    <div class="avatarIteam">
+                        <img src="Imagenes/avatar6.png" class="avatarImgItem" alt=""  width="35" draggable="true">
+                    </div>
+                </div>
+            </div>
+        <div class="itemform">  
+            <p>*Obligatorio</p>
+        </div>
+        <div class="iteamForm">
+            <input type="submit" value="Jugar" id="jugar">
+          </div>
+    </form>
+    </main>
+    <!--footer representa el pie de pagina-->
+    <footer>
+        <p>Practica FrontEnd, Html,Css y Js</p>
+    </footer>
+    <!--El codigo JS-->
+    <script src="JS/datosUsuario.js""></script>
+    <script src="JS/app.js"> </script>
+  
+</body>
+</html>
+
